@@ -1,0 +1,17 @@
+---
+    name: Linter Yaml
+    run-name: Workflow ${{ github.workflow }} by @${{ github.event_name }}
+    on:
+        pull_request:
+    jobs:
+      linter:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v2
+          - name: Install Helm
+            uses: azure/setup-helm@v3
+            env:
+              GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          - name: Scan Helm Charts
+            run: helm lint charts
