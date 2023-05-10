@@ -1,0 +1,6 @@
+---
+configmap:
+  name: app.cm-chart
+  data:
+    key1: value1
+    key2: value2
