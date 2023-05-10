@@ -1,5 +1,5 @@
 apiVersion: v2
 name: configmap-chrt
 description: A Helm chart for Kubernetes ConfigMaps
-version: 0.1.2
-appVersion: 1.0.1
+version: 0.1.3
+appVersion: 1.0.3
