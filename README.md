@@ -10,7 +10,7 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
 
-  helm repo add helm-chart-repositort https://special-broccoli-r4vozov.pages.github.io
+  helm repo add helm-chart-repositort https://santander-group-global-cto.github.io/helm-chart-repository
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo
@@ -18,7 +18,7 @@ mobagel` to see the charts.
 
 To install the fastapi chart:
 
-    helm install my-configmap /santander-group-global-cto/helm-chart-repository/configmap
+    helm install my-configmap santander-group-global-cto/configmap
 
 To uninstall the chart:
 
