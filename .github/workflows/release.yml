@@ -1,23 +1,13 @@
 ---
 name: Release Charts
-run-name: Workflow ${{ github.workflow }} Release {{ github.event.release.tag_name }} ${{ github.event_name }}
+run-name: Workflow ${{ github.workflow }} (Job ${{ github.job }})
 
 on:
-  release:
-    types: [released]
+  push:
+    branches:
+      - main
 
 jobs:
-
-  release:
-    name: Release API Definition
-    runs-on: ubuntu-latest    
-    steps:
-      - name: 🔨 Set up environment - TBD
-        run: echo "🔨 Set up environment - TBD"
-      - name: 📂 Checkout Repository
-        run: echo "📂 Checkout Repository"
-      - name: 🚀 Publish API Version
-        run: echo "🚀 Publish API Version on Gluon"
 
   publish:
     # depending on default permission settings for your org (contents being read-only or read-write for workloads), you will have to add permissions
