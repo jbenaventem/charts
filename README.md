@@ -18,7 +18,7 @@ If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo helm-chart-repository` to see
 the charts.
 
-To install the fastapi chart:
+To install the configmap chart:
 
 ```bash
     helm install my-configmap jbenaventem/configmap
@@ -28,4 +28,3 @@ To uninstall the chart:
 ```bash
     helm delete my-configmap
 ```
-
